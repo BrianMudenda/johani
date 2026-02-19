@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johani – John Chapter 1 Study</title>
+  <!-- Link to our CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Load Supabase client library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header>
+    <h1>📖 Johani</h1>
+    <p>Study the Gospel of John, Chapter 1</p>
+    <div id="auth-section">
+      <!-- This will be filled by JavaScript with login/signup or user info -->
+    </div>
+  </header>
+
+  <main>
+    <h2>Verses</h2>
+    <div id="verses-list">
+      <!-- Verses will be inserted here by JavaScript -->
+      <p class="loading">Loading verses...</p>
+    </div>
+  </main>
+
+  <!-- Modal for notes (hidden by default) -->
+  <div id="note-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-verse-ref">John 1:<span id="modal-verse-num"></span></h3>
+      <textarea id="note-text" placeholder="Write your notes here..."></textarea>
+      <button id="save-note">Save Note</button>
+    </div>
+  </div>
+
+  <!-- Link to our JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
