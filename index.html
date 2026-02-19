@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Johani – John Chapter 1</title>
-  <!-- Link to CSS -->
+  <title>Johani – John Chapter 1 Study</title>
+  <!-- Link to your CSS file -->
   <link rel="stylesheet" href="style.css">
-  <!-- Supabase JS library -->
+  <!-- Load Supabase JavaScript library from CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -33,7 +33,14 @@
     </div>
   </div>
 
-  <!-- Main JavaScript -->
+  <!-- Your app's JavaScript - must come AFTER Supabase library -->
   <script src="app.js"></script>
+
+  <!-- Small fallback in case JavaScript fails or is slow -->
+  <noscript>
+    <div style="color: red; text-align: center; margin-top: 2rem;">
+      JavaScript is disabled. Please enable it to use this app.
+    </div>
+  </noscript>
 </body>
 </html>
